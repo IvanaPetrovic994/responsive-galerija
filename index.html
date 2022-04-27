@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        #naslov{
+            position: relative;
+            top:10px;
+            width: 95vw;
+            left: 5vw;
+            font-size: 14px;
+        }
+        #galerija{
+            margin:0 auto;
+            top: 20px;
+            
+            width: 90vw;
+            position: relative;
+            display: grid;
+            grid-template-columns:repeat(5, 1fr) ;
+            row-gap: 30px;
+            justify-items: center;
+        
+    
+        }
+        .img{
+            width: 15vw;
+            background-color: cornflowerblue;
+            display: grid;
+            justify-items: center;
+            border-radius: 20px 20px 20px 20px;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        #tekst{
+            width: 90vw;
+            margin: 0 auto;
+        }
+        #tekst p{
+            position: relative;
+            top: 50px;
+            color: black;
+            font-size: 1rem;
+        }
+        .tekst2{
+            display: grid;
+            width: 100%;
+            height: 25px;
+            background-color: rgb(240, 240, 240);
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 0 20px 20px;
+        }
+        @media screen and (max-width:768px) {
+            #galerija{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .img{
+                width: 25vw;
+            }
+
+            .tekst2 p{
+                font-size: 0.9rem;
+            }
+        }
+        @media  screen and (max-width:360px) {
+            #galerija{
+                grid-template-columns: 1fr;
+                top: 20px;
+            }
+            .img{
+                width: 60vw;
+            }
+            .tekst2 p{
+            font-size: 1.2rem;
+            
+            }
+            #tekst{
+                width: 80vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="naslov">
+        <h1>Gallery Heading</h1>
+    </div>
+    <div id="galerija">
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="slika">
+                <img src="./placeholder-image.png" alt="">
+            </div>
+            <div class="tekst2">
+                <p>Image Title</p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="tekst">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ex numquam perspiciatis voluptatibus ducimus sequi voluptate distinctio maiores provident aliquid ab libero vero, autem exercitationem eos quia nostrum? Doloremque incidunt itaque pariatur saepe blanditiis quia atque et sit laboriosam ratione, non quasi? Sequi cupiditate atque tempore nemo velit, laborum illum officia numquam, quos, libero dignissimos. Consequatur totam quidem fugiat impedit beatae voluptatibus, perspiciatis, culpa eligendi praesentium fuga ad quod a dolorem aliquid similique temporibus id sapiente dolores doloribus, est dolorum quas iste. Harum non eos et consequatur eaque veniam officia ipsum mollitia quae iusto, exercitationem iure totam, maiores voluptatum minus.</p>
+    </div>
+</body>
+</html>
